@@ -79,7 +79,7 @@ img {
 /*Sets the positioning, font size/color and background color for the text that appears over the screenshots of the assignments*/
 .image_text {
   position: absolute;
-  top: 30%;
+  top: 20%;
   right: 10%;
   font-size: 25px;
   color: var(--grey);
