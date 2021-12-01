@@ -1,0 +1,539 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*Setting the variables for different colors*/
+:root {
+  --darkBlue: darkblue;
+  --lightBlue: rgb(93, 189, 221);
+  --grey: black;
+  --lightBlue2: rgb(78, 197, 236);
+  --black:black;
+}
+
+/*Setting the font size/family/color, background color and height and width.*/
+header {
+  font-size: 150%;
+  font-family: sans-serif, Times, serif;
+  background-color: rgb(87, 85, 85);
+  color: var(--lightBlue2);
+  height: 70px;
+  width: 100%;
+}
+
+/*Sets the font family and background color*/
+body{
+  font-family: sans-serif, Times, serif;
+  background-color: rgb(171, 177, 179);
+}
+
+/*Sets the font color and background color. Sets display, padding, transforms the text to Uppercase. Sets the width list style and a left margin.*/
+h1 {
+  color: rgb(75, 71, 71);
+  background-color: var(--lightBlue2);
+  display: inline;
+  padding: 5px 10px 5px 10px;
+  text-transform: uppercase;
+  width: 100%;
+  list-style-type: none;
+  margin-left: 15px;
+}
+
+/*Sets the styling and layout for the links at the top right*/
+header nav ul li a {
+  color: var(--lightBlue2);
+  text-decoration: underline 5px;
+  text-align: center;
+  right: 10px;
+  margin: 0px 10px 0px 0px;
+}
+
+/*Sets the top padding and right margin. Floats the nav right.*/
+header nav {
+  float: right;
+  margin-right: 2%;
+  padding-top: 1%; 
+}
+
+/*Sets a margin left*/
+header nav ul li {
+  display: inline-block;
+   justify-content: space-between;
+  
+}
+
+/*Removes the list style type if there is any*/
+header nav ul {
+  list-style-type: none;
+}
+
+/*Sets the width to 100% and sets the height*/
+img {
+  width: 100%;
+  height: 275px;
+}
+
+/*Sets the positioning, font size/color and background color for the text that appears over the screenshots of the assignments*/
+.image_text {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  font-size: 25px;
+  color: var(--grey);
+  background-color: var(--lightBlue2);
+  padding: 15px;
+}
+
+/*Sets the color text*/
+p {
+  color: rgba(128, 106, 6, 0.534);
+}
+
+/*Container in which the left side and right side of the page are*/
+.nextto {
+  overflow-x:hidden;
+  text-align: center;
+}
+
+/*Sets the styling and alignment for the left side of the nextto container*/
+.leftside {
+  color: var(--black);
+  margin: 0 10px 0 0;
+  padding: 15px;
+  font-size: 75px;
+  line-height: 120%;
+  width: 15%;
+  /*display: inline-block;*/
+  text-align: right;
+  padding: 25px;
+  margin: 0;
+  vertical-align: top;
+  float: left;
+}
+
+/*Sets the styling and alignment for the right side of the nextto container*/
+.rightside {
+  color: var(--black);
+  padding: 10px;
+  font-size: 28px;
+  line-height: 120%;
+  width: 70%;
+  display: flex;
+  text-align: justify;
+  border-left: 5px solid var(--black);
+  padding-left: 15px;
+  margin: 20px;
+  border-collapse: separate;
+}
+
+.Puzzle {
+  position: relative;
+}
+
+#projectImg {
+  border: 5px solid var(--lightBlue);
+  
+}
+
+
+
+/*When you hover over the image it goes slightly opaque*/
+#projectImg:hover {
+  opacity: 0.7;
+}
+
+.Puzzle img {
+  border: 5px solid var(--lightBlue);
+  height: 400px;
+}
+
+/*When you hover over the image it goes slightly opaque*/
+.Puzzle img:hover {
+  opacity: 0.7;
+}
+
+.nextthree {
+  overflow-x:hidden;
+  text-align: center;
+}
+
+/*Sets the font size/color/family. Sets the width, height, margin, padding and position.*/
+.Calculator {
+  color: var(--black);
+  font-size: 28px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  float: left;
+  width: 40%;
+  margin: 5px;
+  position: relative;
+  border-collapse: separate;
+  border-spacing: 0;
+  
+}
+
+.Calculator img {
+  border: 5px solid var(--lightBlue);
+}
+
+/*When you hover over the image it goes slightly opaque*/
+.Calculator img:hover {
+  opacity: 0.7;
+}
+
+/*Sets the font size/color/family. Sets the width, height, margin, padding and position.*/
+.Report {
+  color: var(--black);
+  font-size: 28px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 40%;
+  float: left;
+  margin: 5px;
+  position: relative;
+}
+
+#projectCard {
+  
+  font-size: 28px;
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  flex: 1 0 50%;
+  height: 300px;
+  
+  position: relative;
+}
+
+#projectCard:first-of-type {
+  
+  font-size: 28px;
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  flex: 0 1 100%;
+  height: 300px;
+  
+  position: relative;
+}
+
+.Report img {
+  border: 5px solid var(--lightBlue);
+  
+}
+
+/*When you hover over the image it goes slightly opaque*/
+.Report img:hover {
+  opacity: 0.7;
+}
+
+/*Sets the font size/color/family. Sets the width, height, margin, padding and position.*/
+.chess {
+  color: var(--black);
+  font-size: 28px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 40%;
+  float: right;
+  margin: 5px;
+  position: relative;
+}
+
+.chess img {
+  border: 5px solid var(--lightBlue);
+  
+}
+
+/*When you hover over the image it goes slightly opaque*/
+.chess img:hover {
+  opacity: 0.7;
+}
+
+/*Sets the font size/color/family. Sets the width, height, margin, padding and position.*/
+.Game {
+  color: var(--black);
+  font-size: 28px;
+  margin: 5px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  float: right;
+  width: 40%;
+  position: relative;
+}
+
+.Game img {
+  border: 5px solid var(--lightBlue);
+  
+}
+
+/*When you hover over the image it goes slightly opaque*/
+.Game img:hover {
+  opacity: 0.7;
+}
+
+.left2 {
+  color: var(--black);
+  padding: 15px;
+  font-size: 75px;
+  line-height: 120%;
+  width: 15%;
+  /*display: inline-block;*/
+  text-align: right;
+  border-spacing: 0 15px 0 0;
+  padding: 25px;
+  vertical-align: top;
+  float: left;
+}
+
+.codingImg2 {
+  color: var(--black);
+  padding: 10px;
+  font-size: 28px;
+  line-height: 120%;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  border-left: 5px solid var(--black);
+  padding-left: 15px;
+  margin: 20px;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*Sets the position, text color, padding and sets alignment*/
+.left3 {
+  color: var(--black);
+  font-size: 75px;
+  line-height: 120%;
+  width: 15%;
+  /*display: inline-block;*/
+  text-align: right;
+  padding: 20px;
+  vertical-align: top;
+  border-right: 5px solid var(--black);
+  float: left;
+}
+
+.right3 {
+  color: var(--black);
+  font-size: 28px;
+ 
+  width: 70%;
+  display: inline-block;
+  padding: 5px;
+  
+  border-collapse: separate;
+  border-spacing: 15px 50px;
+}
+
+.nextfour {
+  overflow-x:hidden;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/*Sets the position, text color, padding and sets alignment*/
+/*.first {
+  position: absolute;
+  color: var(--grey);
+  /*background-color: var(--lightBlue2);
+  padding-left: 20px;
+  padding-right: 20px;
+  bottom: 10%;
+  right: 5%;
+}*/
+
+.first {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+ /*Sets the background color, margin, padding, text color and aligns the text.*/
+.first p {
+  background-color: var(--lightBlue2);
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--grey);
+  text-align: center;
+}
+
+
+
+/*Sets the position, text color, padding and sets alignment*/
+.LS2 {
+  position: absolute;
+  color: var(--grey);
+  /*background-color: var(--lightBlue2);*/
+  padding-left: 20px;
+  padding-right: 20px;
+  bottom: 10%;
+  right: 5%;
+}
+
+/*Sets the background color, margin, padding, text color and aligns the text.*/
+.LS2 p {
+  background-color: var(--lightBlue2);
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--grey);
+  text-align: center;
+}
+
+ /*Sets the background color, margin, padding, text color and aligns the text.*/
+.LS1 p {
+  background-color: var(--lightBlue2);
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--grey);
+  text-align: center;
+}
+
+ /*Sets the background color, margin, padding, text color and aligns the text.*/
+.RS1 p {
+  background-color: var(--lightBlue2);
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--grey);
+  text-align: center;
+}
+
+/*Sets the position, text color, padding, background color and sets alignment*/
+.RS2 {
+  position: absolute;
+  color: var(--grey);
+  background-color: var(--lightBlue2);
+  padding-left: 20px;
+  padding-right: 20px;
+  bottom: 10%;
+  right: 5%;
+}
+
+.right3 ul {
+  float: right;
+  width: 100%;
+  margin: auto;
+  
+}
+
+.right3 ul li {
+  display: inline-block;
+  color: var(--black);
+  font-size: 28px;
+  line-height: 120%;
+  border-bottom: 5px solid;
+  padding-bottom: 2px;
+  margin: 10px 3% 10px 3%;
+  
+}
+
+.right3 ul li a {
+  color: var(--black);
+}
+
+
+/*Media queries for a smaller screen and moblie*/
+@media screen and (max-width: 1700px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .left3 {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+}
+
+
+@media screen and (max-width: 1200px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .left3 {
+    font-size: 40px;
+    text-align: center;
+   /* padding: 0px;*/
+  }
+  /*.left2 {
+    padding: 0px;
+  }*/
+  .leftside {
+    font-size: 40px;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: left;
+  }
+  nav ul {
+    flex: 0 1 100%;
+    background-color: rgb(87, 85, 85);
+  }
+  header {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 1007px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .left2 {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+  }
+  .left3 {
+    width: 100%;
+  }
+  .codingImg2 {
+    border-left:0;
+  }
+  
+}
+
+@media screen and (max-width: 599px) {
+h1 {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+header nav {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 10px solid rgb(87, 85, 85);
+}
+.right3 {
+  width: 90%;
+}
+}
+
+@media screen and (max-width: 550px) {
+  #about-me {
+   
+    width: 100%;
+  }
+  .rightside{
+    border-left:0;
+    margin: 0px;
+    width: 80%;
+    padding: 0px;
+    margin-left: 10%;
+  }
+  
+}
