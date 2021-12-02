@@ -133,25 +133,14 @@ p {
   position: relative;
 }
 
+/*Sets the border for each individual project screenshot*/
 #projectImg {
   border: 5px solid var(--lightBlue);
-  
 }
-
 
 
 /*When you hover over the image it goes slightly opaque*/
 #projectImg:hover {
-  opacity: 0.7;
-}
-
-.Puzzle img {
-  border: 5px solid var(--lightBlue);
-  height: 400px;
-}
-
-/*When you hover over the image it goes slightly opaque*/
-.Puzzle img:hover {
   opacity: 0.7;
 }
 
@@ -160,118 +149,24 @@ p {
   text-align: center;
 }
 
-/*Sets the font size/color/family. Sets the width, height, margin, padding and position.*/
-.Calculator {
-  color: var(--black);
-  font-size: 28px;
-  height: 300px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  float: left;
-  width: 40%;
-  margin: 5px;
-  position: relative;
-  border-collapse: separate;
-  border-spacing: 0;
-  
-}
-
-.Calculator img {
-  border: 5px solid var(--lightBlue);
-}
-
-/*When you hover over the image it goes slightly opaque*/
-.Calculator img:hover {
-  opacity: 0.7;
-}
-
-/*Sets the font size/color/family. Sets the width, height, margin, padding and position.*/
-.Report {
-  color: var(--black);
-  font-size: 28px;
-  height: 300px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: 40%;
-  float: left;
-  margin: 5px;
-  position: relative;
-}
-
+/*Using flex to display to projects per row except for the first*/
 #projectCard {
-  
   font-size: 28px;
-  
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   flex: 1 0 50%;
   height: 300px;
-  
   position: relative;
 }
 
+/*Sets unique styling properties for the first project on the page*/
 #projectCard:first-of-type {
-  
   font-size: 28px;
-  
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
   flex: 0 1 100%;
   height: 300px;
-  
   position: relative;
 }
 
-.Report img {
-  border: 5px solid var(--lightBlue);
-  
-}
-
-/*When you hover over the image it goes slightly opaque*/
-.Report img:hover {
-  opacity: 0.7;
-}
-
-/*Sets the font size/color/family. Sets the width, height, margin, padding and position.*/
-.chess {
-  color: var(--black);
-  font-size: 28px;
-  height: 300px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: 40%;
-  float: right;
-  margin: 5px;
-  position: relative;
-}
-
-.chess img {
-  border: 5px solid var(--lightBlue);
-  
-}
-
-/*When you hover over the image it goes slightly opaque*/
-.chess img:hover {
-  opacity: 0.7;
-}
-
-/*Sets the font size/color/family. Sets the width, height, margin, padding and position.*/
-.Game {
-  color: var(--black);
-  font-size: 28px;
-  margin: 5px;
-  height: 300px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  float: right;
-  width: 40%;
-  position: relative;
-}
-
-.Game img {
-  border: 5px solid var(--lightBlue);
-  
-}
-
-/*When you hover over the image it goes slightly opaque*/
-.Game img:hover {
-  opacity: 0.7;
-}
 
 .left2 {
   color: var(--black);
@@ -320,11 +215,9 @@ p {
 .right3 {
   color: var(--black);
   font-size: 28px;
- 
   width: 70%;
   display: inline-block;
   padding: 5px;
-  
   border-collapse: separate;
   border-spacing: 15px 50px;
 }
@@ -335,17 +228,8 @@ p {
   padding-top: 10px;
 }
 
-/*Sets the position, text color, padding and sets alignment*/
-/*.first {
-  position: absolute;
-  color: var(--grey);
-  /*background-color: var(--lightBlue2);
-  padding-left: 20px;
-  padding-right: 20px;
-  bottom: 10%;
-  right: 5%;
-}*/
 
+/*Sets the position of the title and Repo text on the project card*/
 .first {
   position: absolute;
   bottom: 10%;
@@ -375,35 +259,7 @@ p {
   right: 5%;
 }
 
-/*Sets the background color, margin, padding, text color and aligns the text.*/
-.LS2 p {
-  background-color: var(--lightBlue2);
-  margin: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: var(--grey);
-  text-align: center;
-}
 
- /*Sets the background color, margin, padding, text color and aligns the text.*/
-.LS1 p {
-  background-color: var(--lightBlue2);
-  margin: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: var(--grey);
-  text-align: center;
-}
-
- /*Sets the background color, margin, padding, text color and aligns the text.*/
-.RS1 p {
-  background-color: var(--lightBlue2);
-  margin: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: var(--grey);
-  text-align: center;
-}
 
 /*Sets the position, text color, padding, background color and sets alignment*/
 .RS2 {
@@ -439,7 +295,7 @@ p {
 }
 
 
-/*Media queries for a smaller screen and moblie*/
+/*Media queries for larger screens*/
 @media screen and (max-width: 1700px) {
   /* For mobile phones: */
   [class*="col-"] {
@@ -535,5 +391,7 @@ header nav {
     padding: 0px;
     margin-left: 10%;
   }
-  
+  .image_text {
+    top: 30%;
+  }
 }
