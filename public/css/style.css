@@ -339,7 +339,7 @@ p {
   
 }
 
-@media screen and (max-width: 1007px) {
+@media screen and (max-width: 1045px) {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
@@ -355,7 +355,13 @@ p {
   .codingImg2 {
     border-left:0;
   }
-  
+  header nav {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 10px solid rgb(87, 85, 85);
+  }
 }
 
 @media screen and (max-width: 599px) {
